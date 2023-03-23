@@ -1,1 +1,1 @@
-# guthub_actions
+# github_actions

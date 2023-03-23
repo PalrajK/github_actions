@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Print greeting
         run: |
-          echo "Helllo World!"
-          echo "Helllo Second Line!"
+            echo "Helllo World!"
+            echo "Helllo Second Line!"
       - name: Print Goodbye
         run: echo "Done - Bye!"

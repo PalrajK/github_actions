@@ -3,7 +3,7 @@ name: First action
 on: workflow_dispatch
 jobs:
   first-job:
-    runs-on: antansapps01
+    runs-on: self-hosted
     steps:
       - name: Print greeting
         run: |

@@ -8,6 +8,12 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: 18
+    - name: Wait for approval
+      uses: trstringer/manual-approval@v1
+      with:
+        secret: ${{ steps.generate_token.outputs.token }}
+        approvers: palrajk
+        minimum-approvals: 1
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
